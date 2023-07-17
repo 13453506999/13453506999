@@ -92,28 +92,3 @@
 <!-- just img 图片 -->
 <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/icon.png" /></div>
 
-
-
-3.查看状态：git status 
-  --确认目录下有哪些代码待提交或没有提交，下面显示成红色没有提交。
-  
-4.添加文件：git add .
-  --git add .(注意这个"."，是有空格的，"."代表当前目录下的全部文件都提交）
-  --也可输入:git add src ,即提交了src，此src为文件夹。
-  提交后，则会变绿。变绿代表进入了”暂存区“，并没有提交到服务器上。
-  
-5.提交文件：git commit 
-  --提交至服务器。将”暂存区“（绿色的内容）提交至服务器。
-  --git commit -m “双引号中间是提交代码时写的备注”
-  --注意：如果在提交时提示
-	#Please enter the commit message for your changes. Lines starting 
-	#with '#' will be ignored, and an empty message aborts the commit. 
-	则修改提交命令为： git commit -m "注释" 
-  
-6.再次查看状态：git status
-  --确认暂储区没有待提交的内容。
-  
-7.推送本地代码到GitHub仓库：git push -u origin master
-  --此步的前提是已经在GitHub上创建好了Git仓库，否则得先创建仓库，再进行此步，具体操作见步骤三
-
-8.（2022-03-25 更新）在GitHub上修改代码保存后，更新修改后的代码到本地，需执行命令：git pull origin
